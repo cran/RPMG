@@ -1,10 +1,10 @@
 Package: RPMG
 Type: Package
-Title: What the package does (short line)
-Version: 1.0
-Date: 2007-10-03
+Title: Graphical User Interface (GUI) for interactive R analysis sessions
+Version: 1.0-1
+Date: 2007-10-10
 Author: Jonathan M. Lees
 Maintainer: Jonathan M. Lees<jonathan.lees@unc.edu>
 Description: Poor Man's Gui: create interactive R analysis sessions
-License: GNU General Public License (GPL)
-Packaged: Thu Oct  4 16:05:04 2007; lees
+License: GPL
+Packaged: Wed Oct 10 09:50:24 2007; lees

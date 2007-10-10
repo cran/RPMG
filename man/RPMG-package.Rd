@@ -3,7 +3,8 @@
 \alias{RPMG}
 \docType{package}
 \title{
-Really Poor Man's GUI
+Really Poor Man's GUI: sets up buttons for a graphical user interface in
+R
 }
 \description{
   Package consists of two functions for setting up a\
@@ -14,9 +15,9 @@ Really Poor Man's GUI
 \tabular{ll}{
 Package: \tab RPMG\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2007-10-03\cr
-License: \tab GNU General Public License (GPL)\cr
+Version: \tab 1.0-1\cr
+Date: \tab 2007-10-10\cr
+License: \tab GPL\cr
 }
 
 }

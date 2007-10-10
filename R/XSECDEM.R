@@ -5,7 +5,8 @@ XSECDEM<-function(Data, labs, demo=FALSE)
     
 #####  to make the rainbow color palette named like other palettes in R
     
-    rainbow.colors<-function(n){ return( rainbow(n) ) }
+  ###  this needs to be defined
+    #####  rainbow.colors<-function(n){ return( rainbow(n) ) }
 
 
     nx = dim(Data)[1]
@@ -136,7 +137,11 @@ XSECDEM<-function(Data, labs, demo=FALSE)
 
               }
             buttons = rowBUTTONS(labs, col=colabs, pch=pchlabs)
-            if(PS.FLAG) { dev.off(); PS.FLAG =  FALSE }
+            if(PS.FLAG) {
+              dev.off();
+              cat("the postscript file is in: RPMGdemo.eps", sep="\n")
+              PS.FLAG =  FALSE
+            }
 
 
           }
