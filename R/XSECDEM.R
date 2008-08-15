@@ -116,7 +116,7 @@ XSECDEM<-function(Data, labs, demo=FALSE)
             iseclab = iseclab + 1
             LAB = LETTERS[iseclab]
             secmat = rbind(secmat, c(x1, y1, x2,  y2))
-            GETXprofile(jx, jy, Data, myloc=list(x=c(x1, x2), y=c(y1, y2)), LAB=LAB, PLOT=TRUE)
+            aGETXprofile(jx, jy, Data, myloc=list(x=c(x1, x2), y=c(y1, y2)), LAB=LAB, PLOT=TRUE)
                }
             else
               {

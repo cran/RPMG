@@ -1,5 +1,5 @@
-\name{GETXprofile}
-\alias{GETXprofile}
+\name{aGETXprofile}
+\alias{aGETXprofile}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Cross sectional profile through a digital elevation map }
 \description{
@@ -8,7 +8,7 @@
   and find projected cross-sections through a surface.
 }
 \usage{
-GETXprofile(jx, jy, jz, LAB = "A", myloc = NULL, PLOT = FALSE, asp=1)
+aGETXprofile(jx, jy, jz, LAB = "A", myloc = NULL, PLOT = FALSE, asp=1)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -60,7 +60,7 @@ GETXprofile(jx, jy, jz, LAB = "A", myloc = NULL, PLOT = FALSE, asp=1)
 
 ## extract and plot cross section
 
- GETXprofile(jx, jy, volcano, myloc=list(x=c(x1, x2), y=c(y1, y2)), LAB=LAB, PLOT=TRUE)
+ aGETXprofile(jx, jy, volcano, myloc=list(x=c(x1, x2), y=c(y1, y2)), LAB=LAB, PLOT=TRUE)
             
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

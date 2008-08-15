@@ -1,8 +1,8 @@
-`GETXprofile` <-
+`aGETXprofile` <-
 function(jx, jy, jz, LAB="A", myloc=NULL, PLOT=FALSE, asp=1)
 {
 ###############  get a cross section through a topographic DEM
-############   GETXprofile : xsec  through topo
+############   aGETXprofile : xsec  through topo
 
   if(missing(myloc)) {  myloc=NULL }
     if(missing(LAB)) {   LAB="A" }
