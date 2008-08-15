@@ -216,7 +216,7 @@ gv$RY=RY
 
             bb = c(255-aa[1], 255-aa[2], 255-aa[3])
             
-            aacomp = rgb(bb[1], bb[2], bb[3], max=255)
+            aacomp = rgb(bb[1], bb[2], bb[3], maxColorValue=255)
 
             print(paste(sep=" ", aacomp, paste( bb, collapse=" ")))
             

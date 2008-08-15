@@ -15,7 +15,7 @@ R
 \tabular{ll}{
 Package: \tab RPMG\cr
 Type: \tab Package\cr
-Version: \tab 2.0-8\cr
+Version: \tab 2.1-2\cr
 Date: \tab 2008-08-15\cr
 License: \tab GPL\cr
 }

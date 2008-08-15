@@ -26,11 +26,11 @@ function(n, acol=c(1,0,0), bcol=c(1,1,1)  )
       
       
       
-      nr1 = seq(from=r1, length=n, by=hr1)
-      nb1 = seq(from=b1, length=n, by=hb1)
-      ng1 = seq(from=g1, length=n, by=hg1)
+      nr1 = seq(from=r1, length.out=n, by=hr1)
+      nb1 = seq(from=b1, length.out=n, by=hb1)
+      ng1 = seq(from=g1, length.out=n, by=hg1)
         
-COL = rgb(r=nr1, g=ng1, b=nb1)
+COL = rgb(red=nr1, green=ng1, blue=nb1)
 
 
       

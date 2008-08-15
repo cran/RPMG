@@ -6,7 +6,7 @@ function(pref, suf)
 ##X##     ###  used to avoid writing over files
     ###  e.g.:  plfname = local.file("test","eps")
     i = 0
-    indchar       = formatC(i, format="d", wid=4,  flag="0")
+    indchar       = formatC(i, format="d", width=4,  flag="0")
     tfile = paste(sep='_', pref, indchar)    
     ofile = paste(sep='.', tfile, suf)
  
@@ -18,7 +18,7 @@ function(pref, suf)
     while(vof==TRUE)
       {
 
-        indchar       = formatC(i, format="d", wid=4,  flag="0")
+        indchar       = formatC(i, format="d", width=4,  flag="0")
         tfile = paste(sep='_', pref, indchar)    
         ofile = paste(sep='.', tfile, suf)
  
