@@ -14,6 +14,17 @@
     
     DF = SELOPT(COLLIST,  onoff=-1, ncol=ncol, ocols =COLLIST, cex=.6 )
 
+##    cat("thecols=")
+##     cat
+
+PDF = paste(sep="", "\"", paste(DF, collapse="\",\""), "\"")
+    
+    cat(file="Copy and paste this into your R session:","\n")
+ cat(file="","\n")
+
+  cat(file="",paste(sep="", "thecols", "=c(", PDF , ")") , fill=TRUE)
+  cat(file="","\n")
+
     
     if(!is.null(DF))
       {

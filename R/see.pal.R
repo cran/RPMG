@@ -26,6 +26,6 @@ function(col)
       
     rect(x1,y1,x2,y2,  col=col, xpd = TRUE, border=-1)
     
-
+    invisible(c(x1,y1,x2,y2))
   }
 

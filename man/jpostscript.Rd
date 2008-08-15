@@ -1,5 +1,6 @@
 \name{jpostscript}
 \alias{jpostscript}
+\alias{jpng}
 
 \title{Postscript Output}
 \description{
@@ -9,19 +10,28 @@
   plot as viewed in the screen.
 }
 \usage{
-jpostscript(name, P = NULL)
+jpostscript(file=NULL, P=NULL, w=NULL, h=NULL)
+jpng(file=NULL, P = NULL)
 }
 
 \arguments{
-  \item{name}{Postscript file name}
+  \item{file}{Postscript file name, eps will be added as a suffix}
+  
   \item{P}{vector to fix the size, c(width, height) }
+  \item{w}{width, inches }
+  \item{h}{height, inches }
+
+
+
+  
 }
 \details{
-  If P=c(10,12) is missing, program will
+  If P=c(10,12) is missing or NULL, program will
   attempt to use current plotting region via par
   to duplicated the size
   of the postscript device. Must close this device with
-  dev.off() to finish.
+  dev.off() to finish.  If either w or h are provided they will override
+  the values in vector P.
   }
   
 \value{
@@ -43,6 +53,15 @@ plot(x,y)
 print('resize the current plot')
 
 jpostscript(jjj)
+plot(x,y)
+dev.off()
+
+jpostscript("HiThere", P=c(7,7) )
+plot(x,y)
+dev.off()
+
+
+jpostscript("HiThere", P=c(7,7), w=10 )
 plot(x,y)
 dev.off()
 
