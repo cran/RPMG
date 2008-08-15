@@ -6,7 +6,8 @@
   presentations
 }
 \usage{
-slideshow(P = c("hi", "there", "sugar pie"), dy = 0.2, EX = 0.1, ht = 3, font = 2, anim = FALSE)
+slideshow(P = c("hi", "there", "sugar pie"),
+dy = 0.2, EX = 0.1, ht = 3, font = 2, anim = FALSE)
 }
 \arguments{
   \item{P}{vector of character strings to display

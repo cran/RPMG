@@ -5,7 +5,8 @@
 \description{Select buttons interactively.
 }
 \usage{
-SELOPT(OPTS, onoff = -1, ncol=5, ocols = "white", cex=1, default="opt" )
+SELOPT(OPTS, onoff = -1, ncol=5, ocols = "white",
+       cex=1, default="opt" )
 }
 \arguments{
   \item{OPTS}{character list of buttons
@@ -41,7 +42,9 @@ Jonathan M. Lees<jonathan.lees@unc.edu>
 \examples{
 
 \dontrun{
-STDLAB=c("DONE", "QUIT", "zoom.out", "zoom.in", "SELOPT", "FILT","UNFILT", "PSEL", "SGRAM", "WLET", "SPEC", "XTR" )
+STDLAB=c("DONE", "QUIT", "zoom.out", "zoom.in", "SELOPT",
+"FILT","UNFILT",
+ "PSEL", "SGRAM", "WLET", "SPEC", "XTR" )
 onoff = rep(0, length(STDLAB))
 onoff[1:5] = 1
 SELOPT(STDLAB, onoff=onoff)

@@ -5,8 +5,9 @@
 \description{Plot Text labels with border and background color
 }
 \usage{
-textrect(x, y, lab, textcol = "black", col = "white", border = "black",
-off = 0.06, brd = 0.06, pos = 1, log="" , add=TRUE, ...)
+textrect(x, y, lab, textcol = "black", col = "white",
+   border = "black", off = 0.06, brd = 0.06, pos = 1, log="" ,
+   add=TRUE, ...)
 }
 \arguments{
   \item{x}{x-location, user coordinates
@@ -74,7 +75,8 @@ y = 1:9
 plot(x,y, asp=1)
 for(i in 1:length(thepos))
 {
-textrect(x[i], y[i], lab, col=i , border='green' , textcol="gold",  off=.06,  brd=.06 , pos=thepos[i], font=1, cex=.8 )
+textrect(x[i], y[i], lab, col=i , border='green' ,
+textcol="gold",  off=.06,  brd=.06 , pos=thepos[i], font=1, cex=.8 )
 }
 
 

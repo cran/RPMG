@@ -6,9 +6,11 @@
  Choose an option from a selection
 }
 \usage{
-chooser(opts=c(1, 2, 5, 10, 15, 20) , ncol=5, nsel=NA, newdev=TRUE, STAY=FALSE,
-           cols="red", main="", newplot=TRUE, xlim=c(0,1), ylim=c(0,1),
-just="CEN", ... )
+chooser(opts=c(1, 2, 5, 10, 15, 20) , ncol=5, nsel=NA,
+    newdev=TRUE, STAY=FALSE,
+    cols="red", main="", newplot=TRUE,
+    xlim=c(0,1), ylim=c(0,1),
+    just="CEN", ... )
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -72,8 +74,9 @@ plot(runif(10, 1, 100), runif(10, 1, 100), type='n')
 
 APAL = c('tan2','red2','lightpink3','chocolate4','blue3','thistle4',
   'lightcyan4',
-      'orangered1','purple4','darkred','dodgerblue1','gold3','chartreuse',
-  'sienna4')
+   'orangered1','purple4','darkred',
+   'dodgerblue1','gold3','chartreuse',
+   'sienna4')
 
 ##   nchar( APAL )
 wm = which.max(nchar( APAL ))
@@ -89,7 +92,8 @@ mwid = max( strwidth(APAL) )
 mwid = mwid + 0.05*mwid
 
 chooser(opts=APAL  , ncol=1, nsel=NA, newdev=FALSE, STAY=TRUE,
-           newplot=FALSE, xlim=c(upar[1], upar[1]+mwid) , ylim=c( (upar[4]-mhgt),upar[4]) , main=""  )
+           newplot=FALSE, xlim=c(upar[1], upar[1]+mwid) ,
+       ylim=c( (upar[4]-mhgt),upar[4]) , main=""  )
 
 
 

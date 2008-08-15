@@ -5,9 +5,10 @@
 \description{Replot Function for SELBUT
 }
 \usage{
-OPTREPLOT(opts , ncol=5, sel=1,  HOZ=TRUE, TOP=TRUE, cols="white",
-scol="black", bcol="white" , tcol="black",
-slwd=1, blwd=3, main="", xlim=c(0,1), ylim=c(0,1), cex=1,  mpct = 0.1,  newplot=TRUE)
+OPTREPLOT(opts , ncol=5, sel=1,  HOZ=TRUE, TOP=TRUE,
+cols="white", scol="black", bcol="white" , tcol="black",
+slwd=1, blwd=3, main="", xlim=c(0,1), ylim=c(0,1),
+cex=1,  mpct = 0.1,  newplot=TRUE)
 }
 \arguments{
   \item{opts}{character list of options
@@ -62,15 +63,18 @@ Jonathan M. Lees<jonathan.lees@unc.edu>
 \examples{
 
 
-STDLAB=c("DONE", "QUIT", "zoom.out", "zoom.in", "SELBUT", "FILT","UNFILT", "PSEL", "SGRAM", "WLET", "SPEC", "XTR" )
+STDLAB=c("DONE", "QUIT", "zoom.out", "zoom.in", "SELBUT", "FILT",
+"UNFILT", "PSEL", "SGRAM", "WLET", "SPEC", "XTR" )
 OPTREPLOT(STDLAB)
 
 
 XMCOL =  setXMCOL()
-YN = OPTREPLOT(XMCOL, cols =XMCOL, tcol=grey(.8)  , scol=  "transparent", bcol= "transparent",  mpct=0.05   )
+YN = OPTREPLOT(XMCOL, cols =XMCOL, tcol=grey(.8)  ,
+scol=  "transparent", bcol= "transparent",  mpct=0.05   )
 
 
-YN = OPTREPLOT(XMCOL, cols =XMCOL, tcol=grey(.8)  , scol=  "transparent", bcol= "black",  mpct=0.05   )
+YN = OPTREPLOT(XMCOL, cols =XMCOL, tcol=grey(.8)  ,
+scol=  "transparent", bcol= "black",  mpct=0.05   )
 
 
 
