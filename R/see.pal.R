@@ -24,7 +24,7 @@ function(col)
     y1 = LU$y[1]
     y2 =  LU$y[2]
       
-    rect(x1,y1,x2,y2,  col=col, xpd = TRUE, border=-1)
+    rect(x1,y1,x2,y2,  col=col, xpd = TRUE, border=NA)
     
     invisible(c(x1,y1,x2,y2))
   }

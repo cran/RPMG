@@ -67,7 +67,7 @@
           }
       }
     
-    YN = OPTREPLOT(LABS, ncol = ncol ,  cols =COLLIST, scol= bg, bcol= bg, cex=.8 )
+    YN = OPTREPLOT(LABS, ncol = ncol ,  cols =COLLIST, scol= bg, bcol= bg, cex=.8 , newplot=FALSE)
 
     title("Color Palette")
     par(opar)
