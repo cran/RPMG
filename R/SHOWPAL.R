@@ -1,9 +1,11 @@
 `SHOWPAL` <-
-function(XMCOL, NAME=FALSE, ncol=5)
+  function(COLLIST, NAME=FALSE, NUM=FALSE, ncol=5, BACK="transparent")
   {
     if(missing(NAME)) { NAME=FALSE }
+       if(missing(NUM)) { NUM=FALSE }
+    if(missing(BACK)) { BACK=NULL }
     
-    N  = length(XMCOL)
+    N  = length(COLLIST)
     
     if(missing(ncol))
       {
@@ -19,13 +21,24 @@ function(XMCOL, NAME=FALSE, ncol=5)
         
       }
     
-     if( (N%%2) != (ncol%%2) )
-          {
-            ncol=ncol+1
-          }
-      
-    ##  SHOWPAL(XMCOL)
-   
+    if( (N%%2) != (ncol%%2) )
+      {
+        ncol=ncol+1
+      }
+    
+    ##  SHOWPAL(COLLIST)
+    
+    opar = par(no.readonly = TRUE)
+
+    if(!is.null(BACK))
+      {
+        par(bg=BACK)
+        bg = BACK
+      }
+    else
+      {
+        bg = opar$bg
+      }
     
     par(mfrow=c(1,1))
     
@@ -36,22 +49,29 @@ function(XMCOL, NAME=FALSE, ncol=5)
     dx = 1/ncol
     dy =  1/nrow
 
-   ###  print(c(ncol, nrow))
-
-          
-    for(i in 1:N)
+###  print(c(ncol, nrow))
+    if(NAME==FALSE)
       {
-        B =  itoxyz(i, ncol, nrow, 1)
-        x = (B$ix-1)*dx
-        y = (B$iy-1)*dy
-        rect(x , y , x+dx, y+dy, lty=1, col=XMCOL[i] )
-        if(NAME==TRUE)
+        LABS = rep("", times=length(COLLIST))
+      }
+    else
+      {
+        if(NUM)
           {
-            lab = paste(sep=':', i,XMCOL[i])
-            text(x+dx/2 , y+dy/2, lab, adj=0.5, col=1)
+            LABS = paste(sep=":", seq(from=1, to=length(COLLIST)), COLLIST)
+          }
+        else
+          {
+            
+            LABS = COLLIST
           }
       }
+    
+    YN = OPTREPLOT(LABS, ncol = ncol ,  cols =COLLIST, scol= bg, bcol= bg, cex=.8 )
+
     title("Color Palette")
+    par(opar)
+    
     return(list(N=N, ncol=ncol, nrow=nrow, dx=dx, dy=dy))
   }
 

@@ -103,7 +103,10 @@ XSECDEM<-function(Data, labs, demo=FALSE)
         if(K[Nclick] == match("XSEC", labs, nomatch = NOLAB))
           {
             n = length(zloc$x)
-            x1 = zloc$x[n-2]
+
+            if(n>2)
+              {
+                 x1 = zloc$x[n-2]
             y1 = zloc$y[n-2]
             x2 = zloc$x[n-1]
             y2 = zloc$y[n-1]
@@ -114,7 +117,13 @@ XSECDEM<-function(Data, labs, demo=FALSE)
             LAB = LETTERS[iseclab]
             secmat = rbind(secmat, c(x1, y1, x2,  y2))
             GETXprofile(jx, jy, Data, myloc=list(x=c(x1, x2), y=c(y1, y2)), LAB=LAB, PLOT=TRUE)
-            
+               }
+            else
+              {
+                   print("Not enough legal clicks: need 2 clicks in target")
+               
+              }
+        
             zloc = list(x=NULL, y=NULL)
           }
 

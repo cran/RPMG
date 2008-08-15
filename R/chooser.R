@@ -1,6 +1,6 @@
 `chooser` <-
   function(opts=c(1, 2, 5, 10, 15, 20) , ncol=5, nsel=NA, newdev=TRUE, STAY=FALSE,
-           cols="red", main="", newplot=TRUE, xlim=c(0,1), ylim=c(0,1)  )
+           cols="red", main="", newplot=TRUE, xlim=c(0,1), ylim=c(0,1) , ... )
   {
 ###  choosfilt()
     
@@ -72,14 +72,8 @@
     
     ##  B =  itoxyz(1:N, ncol, nrow, 1)
 
-
-   
-    
   if(newplot)
     {
-      
-   
-
          plot(xlim, ylim, type='n', axes=FALSE,xlab='', ylab='', main=main)
         ##  title( main=main )
     }
@@ -124,16 +118,12 @@
 
       }
 
-    
-
-   
-
-    z = locator(n=nsel, type='p')
+    z = locator(n=nsel, type='p', ...)
 
     if(length(z$x)<1)
       {
         
-        dev.off(dev.cur())
+        if(STAY==FALSE) dev.off(dev.cur())
         return(NULL)
         
       }
