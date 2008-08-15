@@ -1,6 +1,6 @@
 `chooser` <-
   function(opts=c(1, 2, 5, 10, 15, 20) , ncol=5, nsel=NA, newdev=TRUE, STAY=FALSE,
-           cols="red", main="", newplot=TRUE, xlim=c(0,1), ylim=c(0,1) , ... )
+           cols="red", main="", newplot=TRUE, xlim=c(0,1), ylim=c(0,1) , just="CEN", ... )
   {
 ###  choosfilt()
     
@@ -24,6 +24,15 @@
 
     if(missing(xlim)) { xlim = c(0,1) }
     if(missing(ylim)) { ylim=c(0,1) }
+    if(missing(just)) {  just="CEN"  }
+
+
+    just = toupper(just)
+    mjust = match(just, c("CEN", "LEFT", "RIGHT"))
+    if(is.na(mjust) )
+      {
+        just="CEN"
+      }
 
     if(missing(newplot)) { newplot=TRUE }
   
@@ -107,8 +116,9 @@
     
     rect(M$x, M$y, M$x+dx, M$y+dy, col=cols)
 
-    
-    text(M$x+dx/2, M$y+dy/2, lab)      
+    if(just=="CEN") text(M$x+dx/2, M$y+dy/2, lab)      
+    if(just=="LEFT") text(M$x, M$y, lab, adj=c(0,0) )      
+    if(just=="RIGHT") text(M$x+dx, M$y+dy, lab, adj=c(1,0))      
 
     if(nsel==0)
       {

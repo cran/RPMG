@@ -7,7 +7,8 @@
 }
 \usage{
 chooser(opts=c(1, 2, 5, 10, 15, 20) , ncol=5, nsel=NA, newdev=TRUE, STAY=FALSE,
-           cols="red", main="", newplot=TRUE, xlim=c(0,1), ylim=c(0,1), ... )
+           cols="red", main="", newplot=TRUE, xlim=c(0,1), ylim=c(0,1),
+just="CEN", ... )
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -21,6 +22,8 @@ chooser(opts=c(1, 2, 5, 10, 15, 20) , ncol=5, nsel=NA, newdev=TRUE, STAY=FALSE,
  \item{newplot}{logical, TRUE means start a new plot}
  \item{xlim}{xlim on the plot}
  \item{ylim}{ylim on the plot}
+ \item{just}{character, justification in box, one of CEN, LEFT, RIGHT }
+ 
 \item{\dots}{additional parameters from par, used for font, cex, etc...
 }
  
