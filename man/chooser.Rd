@@ -48,7 +48,7 @@ chooser(opts=c(1, 2, 5, 10, 15, 20) , ncol=5, nsel=NA,
 
 \seealso{locator}
 \examples{
-
+\dontrun{
  k = letters[1:26]
     
 pk = chooser(opts=k , nsel=3 )
@@ -96,7 +96,7 @@ chooser(opts=APAL  , ncol=1, nsel=NA, newdev=FALSE, STAY=TRUE,
        ylim=c( (upar[4]-mhgt),upar[4]) , main=""  )
 
 
-
+}
 
 
 

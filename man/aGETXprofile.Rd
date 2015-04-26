@@ -38,6 +38,7 @@ aGETXprofile(jx, jy, jz, LAB = "A", myloc = NULL, PLOT = FALSE, asp=1)
 }
 \seealso{locator, image}
 \examples{
+\dontrun{
 #######  get data 
    data(volcano)
 ####  extract dimensions of image
@@ -61,7 +62,7 @@ aGETXprofile(jx, jy, jz, LAB = "A", myloc = NULL, PLOT = FALSE, asp=1)
 ## extract and plot cross section
 
  aGETXprofile(jx, jy, volcano, myloc=list(x=c(x1, x2), y=c(y1, y2)), LAB=LAB, PLOT=TRUE)
-            
+}            
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -1,4 +1,4 @@
-658a81fe2fd00be398d84ca6b11b9cd1 *DESCRIPTION
+10ded997dcf1dc4c805e51cbc43e044e *DESCRIPTION
 78e3a88f875665cfbd477496fbecae0b *NAMESPACE
 b42871360582e18521153bdf3819b71f *NEWS
 52cad317eb86c9177c69ce8af86d4c95 *R/Gcols.R
@@ -23,7 +23,7 @@ e98cedab3f7ff0d3abf8b828ffb643e0 *R/circle.R
 7b88b22ddfae20159a95ef6ea027e778 *R/helpcolors.R
 296450449ee89295829d57ba25f98708 *R/ilocator.R
 058a2e0e479992222225b0f9e0addefb *R/itoxyz.R
-cbb09c43bb9362dd763b9d36dc6ec71a *R/jpng.R
+bb0f1018e02602ea258c2f6522927d35 *R/jpng.R
 012db33b00801daf5cb6b7646c27aad8 *R/jpostscript.R
 f00743643039b893f71ef5efc65a7f91 *R/label.it.R
 54ae939ba7a6be636cc37258a00916f0 *R/local.file.R
@@ -49,14 +49,14 @@ af1bc2757aa1925b5b5a33663d9676e7 *man/Gcols.Rd
 13eb5812317d2a3262fb927f6be3b333 *man/OPTREPLOT.Rd
 d3181332857a1d08ea62937df0b65260 *man/RESCALE.Rd
 694a8477cf1fc670a57f315efc477db4 *man/RPMG-package.Rd
-f912c5ae15f98ed56c522b2ef23b2e62 *man/SELOPT.Rd
-5788baf27524a188a92329629677bdeb *man/SHOWPAL.Rd
+5361e73976d43b6a5dbd51082a0223af *man/SELOPT.Rd
+3f2215975dabe8a3cd41dbbb5f2cc464 *man/SHOWPAL.Rd
 1b3b6184b3c738af7e0e84aba709724f *man/VVwheel.Rd
 a2e135b5a3199ea4a9b4d572374e4e61 *man/XSECDEM.Rd
-37edf45edef110d0b5942cf8d89602d6 *man/aGETXprofile.Rd
+2506bf1c19c7ebf932e2d4189e66da8d *man/aGETXprofile.Rd
 0716ebb2a15e29e53224b266d17d39c3 *man/breakline.index.Rd
 07253ce2b233b130dcf979cacc566881 *man/butdoc.Rd
-2027efd739b424569484e7e9a90c5133 *man/chooser.Rd
+c3200184631c2306bedf0a3164db2061 *man/chooser.Rd
 f58c3abb267383f0a0873ce309d6d3b7 *man/circle.Rd
 874ea0ebb65b2ad13d4e0e70e49d2ef7 *man/colwheel.Rd
 9fef2f363debca34d16f11a327c53235 *man/cprint.Rd
@@ -66,7 +66,8 @@ f58c3abb267383f0a0873ce309d6d3b7 *man/circle.Rd
 4214b2bd8d2be0cd8925adf35c912ed9 *man/helpcolors.Rd
 79417925c22ac4b6cb5ff64dbf49efaa *man/ilocator.Rd
 9e9aff47f01d0b4564cbc4d701fc9c63 *man/itoxyz.Rd
-d11c7c19d96603ccfa71b377e0471c19 *man/jpostscript.Rd
+34f3815a04698e751700cae35096da4c *man/jpng.Rd
+5b0da3dc1e77c301aaf70febdb68763f *man/jpostscript.Rd
 81818cd4401f92d2bc78dfe949dc205a *man/label.it.Rd
 42889a69a05c4b3385d443c197911313 *man/local.file.Rd
 2737fade80514b83a1ee0bce077943d9 *man/meshgrid.Rd

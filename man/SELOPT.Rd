@@ -50,7 +50,7 @@ onoff[1:5] = 1
 SELOPT(STDLAB, onoff=onoff)
 
 ###   second option for selecting colors
-dev.new(width=12, height=12)
+###dev.new(width=12, height=12)
 
 scol = SELOPT(colors(),  onoff=-1, ncol=15, ocols =colors(), cex=.6 )
 

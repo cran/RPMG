@@ -31,7 +31,7 @@ Graphical Side Effects
 \examples{
 
 ##########   make a large screen for a lot of colors
-dev.new(width=12, height=12)
+### dev.new(width=12, height=12)
 
 SHOWPAL(colors(), ncol=15, NAME=FALSE)
 

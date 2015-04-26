@@ -1,26 +1,26 @@
-\name{jpostscript}
-\alias{jpostscript}
+\name{jpng}
+\alias{jpng}
+\alias{jpdf}
 
-\title{Postscript Output}
+\title{png or pdf  output}
 \description{
   Get file name and recreate plot
-  on a postsctipt device.  This program
+  on a png or pdf device.  This program
   makes an attempt to keep the same size
   plot as viewed in the screen.
 }
 \usage{
-jpostscript(file=NULL, P=NULL, w=NULL, h=NULL)
+jpng(file='tmp',  width = 8, height = 8,P = NULL,  bg = "transparent")
+jpdf(file='tmp',  width = 8, height = 8,P = NULL)
+
 }
 
 \arguments{
-  \item{file}{Postscript file name, eps will be added as a suffix}
-  
+  \item{file}{png or pdf: will be added as a suffix, if needed}
+  \item{width}{width, inches }
+  \item{height}{height, inches }
   \item{P}{vector to fix the size, c(width, height) }
-  \item{w}{width, inches }
-  \item{h}{height, inches }
-
-
-
+  \item{bg}{background color (default="transparent") }
   
 }
 \details{
@@ -30,6 +30,11 @@ jpostscript(file=NULL, P=NULL, w=NULL, h=NULL)
   of the postscript device. Must close this device with
   dev.off() to finish.  If either w or h are provided they will override
   the values in vector P.
+
+  If the standard suffix (png or pdf) are provided
+  the file will be set. If these are omitted, they will be added
+  to the given name according to the local.file function.
+  
   }
   
 \value{
