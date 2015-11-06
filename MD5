@@ -1,10 +1,10 @@
-10ded997dcf1dc4c805e51cbc43e044e *DESCRIPTION
-78e3a88f875665cfbd477496fbecae0b *NAMESPACE
+e5de565c6e88fb9be1e0268e9818e15e *DESCRIPTION
+cae6e73ef90ffc7aba310abbad9f29ac *NAMESPACE
 b42871360582e18521153bdf3819b71f *NEWS
 52cad317eb86c9177c69ce8af86d4c95 *R/Gcols.R
 ea184297fb594801a13e5dffe228b413 *R/HOZscale.R
 a1028fb0ed8b0a79421bfc4c6d4ef213 *R/OPTREPLOT.R
-94c695eff5588d9c66c377a4f28fc95e *R/RESCALE.R
+4577ee55e574bd8f97c9c3eb893bdc08 *R/RESCALE.R
 e71408829450a69b0456d8350a6b7f75 *R/SELOPT.R
 9b8255736ef88ecfd19da656a5134133 *R/SHOWPAL.R
 025a0e713f84809a9f70bc489cb3f081 *R/VVwheel.R
@@ -22,8 +22,8 @@ e98cedab3f7ff0d3abf8b828ffb643e0 *R/circle.R
 1177f36fe9781ad073434f417c60ee03 *R/hcl.colors.R
 7b88b22ddfae20159a95ef6ea027e778 *R/helpcolors.R
 296450449ee89295829d57ba25f98708 *R/ilocator.R
-058a2e0e479992222225b0f9e0addefb *R/itoxyz.R
-bb0f1018e02602ea258c2f6522927d35 *R/jpng.R
+722e5a8aeb1a60cf4c5aa91501079253 *R/itoxyz.R
+8282eef9d767469ab39d83bcd4066cc1 *R/jpng.R
 012db33b00801daf5cb6b7646c27aad8 *R/jpostscript.R
 f00743643039b893f71ef5efc65a7f91 *R/label.it.R
 54ae939ba7a6be636cc37258a00916f0 *R/local.file.R
@@ -47,7 +47,7 @@ e4f7ce463afc45a863b5bbdde061b97b *demo/RPMG.R
 af1bc2757aa1925b5b5a33663d9676e7 *man/Gcols.Rd
 4464e6c0b2fd8cf430ae8338c23c6dd9 *man/HOZscale.Rd
 13eb5812317d2a3262fb927f6be3b333 *man/OPTREPLOT.Rd
-d3181332857a1d08ea62937df0b65260 *man/RESCALE.Rd
+78df307080c3e8e1aa9259b363578d52 *man/RESCALE.Rd
 694a8477cf1fc670a57f315efc477db4 *man/RPMG-package.Rd
 5361e73976d43b6a5dbd51082a0223af *man/SELOPT.Rd
 3f2215975dabe8a3cd41dbbb5f2cc464 *man/SHOWPAL.Rd
@@ -65,8 +65,8 @@ f58c3abb267383f0a0873ce309d6d3b7 *man/circle.Rd
 8de203e5afe345eec720fc5707797571 *man/getmem.Rd
 4214b2bd8d2be0cd8925adf35c912ed9 *man/helpcolors.Rd
 79417925c22ac4b6cb5ff64dbf49efaa *man/ilocator.Rd
-9e9aff47f01d0b4564cbc4d701fc9c63 *man/itoxyz.Rd
-34f3815a04698e751700cae35096da4c *man/jpng.Rd
+da3c9d99a8fb5517a38c15d19d136a71 *man/itoxyz.Rd
+0749cea4775bf035f2de4ef8cd1519d5 *man/jpng.Rd
 5b0da3dc1e77c301aaf70febdb68763f *man/jpostscript.Rd
 81818cd4401f92d2bc78dfe949dc205a *man/label.it.Rd
 42889a69a05c4b3385d443c197911313 *man/local.file.Rd
@@ -84,4 +84,5 @@ a4593debc705923af7bbe03065438036 *man/textrect.Rd
 5bada67ef9ab59b58bbff30462c52ddb *man/wheelrgb.Rd
 748ed44ab2474984eb3dc02d90ee6cfa *man/whichbutt.Rd
 f29af055f09a2a2d4c173c4f593d748e *man/writeCOMMENT.Rd
+c1efb6364ede976e32f08881a7f7c013 *man/xyztoi.Rd
 4258c0c8034a906cca7fd3f1aca26b85 *man/ymarginfo.Rd

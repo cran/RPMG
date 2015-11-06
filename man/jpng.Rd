@@ -10,7 +10,7 @@
   plot as viewed in the screen.
 }
 \usage{
-jpng(file='tmp',  width = 8, height = 8,P = NULL,  bg = "transparent")
+jpng(file='tmp',  width = 8, height = 8,P = NULL,  bg = "white")
 jpdf(file='tmp',  width = 8, height = 8,P = NULL)
 
 }

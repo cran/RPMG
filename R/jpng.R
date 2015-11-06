@@ -1,5 +1,5 @@
 `jpng` <-
-function(file="tmp", width = 8, height = 8, P=NULL,  bg = "transparent")
+function(file="tmp", width = 8, height = 8, P=NULL,  bg = "white")
 {
   if(missing(file)) { file="Jrast" }
         if(missing(P)) { P = NULL }

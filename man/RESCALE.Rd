@@ -6,7 +6,7 @@
  Rescale a vector to fit in a certain range
 }
 \usage{
-RESCALE(x, nx1, nx2, minx, maxx)
+RESCALE(x, nx1=0, nx2=1, minx=0, maxx=1)
 }
 
 \arguments{
@@ -17,10 +17,12 @@ RESCALE(x, nx1, nx2, minx, maxx)
   \item{maxx}{old max}
 }
 \details{
- Used for graphics.
+ Rescaling a vector, mostly used for graphics.
+ If x does not vary, i.e. it is constant or minx and max are identical, the mean value of nx1 and nx2
+ is returned.
 }
 \value{
- scale vector is returned
+ Scale version of x vector is returned.
 }
 
 \author{Jonathan M. Lees<jonathan.lees.edu>}
