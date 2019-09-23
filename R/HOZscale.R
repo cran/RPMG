@@ -1,9 +1,9 @@
 `HOZscale` <-
-function(z, col, units="", SIDE=1, s1=.4, s2=0.95)
+    function(z, col, units="", SIDE=1, s1=.6, s2=0.95, format=1, digits=3, cex=1, cex.units=1)
   {
     if(missing(units)) { units="" }
     if(missing(SIDE)) {  SIDE=1}
-    if(missing(s1)) {     s1=0.4 }
+    if(missing(s1)) {     s1=0.6 }
     if(missing(s2)) {     s2=0.95 }
 
     u = par("usr")
@@ -52,10 +52,53 @@ function(z, col, units="", SIDE=1, s1=.4, s2=0.95)
     y2 =  LU$y[2]
       
     rect(x1,y1,x2,y2,  col=col, xpd = TRUE, border=NA)
-    rlab = paste(sep=" ", format.default(rng[2], digits=3), units)
-    text(LU$x[2]+BX, (y1+y2)/2, labels=rlab, adj=0, xpd = TRUE)
-    text(LU$x[1]-BX/2,  (y1+y2)/2, labels=format.default(rng[1], digits=3), adj=1, xpd = TRUE)
+    
+####  
+    if(format==2)
+        #### exponential notation is requested
+        {
+            char = format(rng[2], scientific = T)
+            sp.char = as.numeric( unlist( strsplit(char, split='e') )  )
+              mant = round(sp.char[1], digits=digits)
+            expt =round(sp.char[2])
+            if(expt==0)
+                {
+                    text(LU$x[2]+BX, (y1+y2)/2, labels=mant ,adj=c(0,.5),  xpd = TRUE , cex=cex )
+                }
+            else
+                {
+                    text(LU$x[2]+BX, (y1+y2)/2, labels=bquote(.(mant)%*%10^.(expt)) ,adj=c(0,.5),  xpd = TRUE, cex=cex  )
+                }
+           ### 
+            char = format(rng[1], scientific = T)
+            sp.char = as.numeric( unlist( strsplit(char, split='e') )  )
+
+            mant = round(sp.char[1], digits=digits)
+            expt =round(sp.char[2])
+              if(expt==0)
+                {
+                    text(LU$x[1]-BX, (y1+y2)/2, labels=mant ,adj=c(1, 0.5),  xpd = TRUE, cex=cex  )
+                }
+            else
+                {
+                    text(LU$x[1]-BX/2,  (y1+y2)/2, labels=bquote(.(mant)%*%10^.(expt)), adj=c(1, 0.5) , xpd = TRUE, cex=cex)
+                }
+            ###########  this is for plotting the units
+            if(SIDE==1)
+                {
+                    text( mean(LU$x), y1, labels=units, adj=c(0.5, -0.1) , xpd = TRUE, cex=cex.units)
+                }
+            else
+                {
+                    text( mean(LU$x), y2, labels=units, adj=c(0.5, -0.1) , xpd = TRUE, cex=cex.units)
+                }
+        }
+    else
+        {
+            rlab = paste(sep=" ", format.default(rng[2], digits=3), units)
+            text(LU$x[2]+BX, (y1+y2)/2, labels=rlab, adj=0, xpd = TRUE, cex=cex)
+            text(LU$x[1]-BX/2,  (y1+y2)/2, labels=format.default(rng[1], digits=3), adj=1, xpd = TRUE, cex=cex)
+        }
     rect(LU$x[1], LU$y[1], LU$x[2], LU$y[2], xpd=TRUE)
-
+    
   }
-

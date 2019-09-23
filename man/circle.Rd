@@ -6,11 +6,12 @@
  generate circle coordinates for plotting
 }
 \usage{
-circle(n = 1)
+circle(n = 1, ang1=0)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{n}{number of points}
+   \item{ang1}{starting angle (degrees)}
 }
 
 \value{

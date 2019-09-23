@@ -6,7 +6,8 @@
  Add horizontal color scale to existing plot.
 }
 \usage{
-HOZscale(z, col, units = "", SIDE = 1, s1 = 0.4, s2 = 0.95)
+HOZscale(z, col, units="", SIDE=1, s1=.6, s2=0.95,
+	    format=1, digits=3, cex=1, cex.units=1)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -16,6 +17,11 @@ HOZscale(z, col, units = "", SIDE = 1, s1 = 0.4, s2 = 0.95)
   \item{SIDE}{Side of the plot}
   \item{s1}{percent of margin for bottom}
   \item{s2}{percent of margin for top}
+  \item{format}{Format: 1 for normal number, 2 for exponential notation}
+   \item{digits}{Significant digits}
+  \item{cex}{Character expansion for the numeric values.}
+  \item{cex.units}{Character expansion for the units.}
+ 
 }
 
 \value{
@@ -30,6 +36,19 @@ data(volcano)
 image(volcano, col=terrain.colors(100))
 
 HOZscale(volcano,terrain.colors(100) , units = "", SIDE = 1, s1 = 0.4, s2 = 0.95)
+
+
+plot(1:10, 1:10, type='n')
+j = c(runif(1, -10, 10) , runif(1, 20, 10000) )
+
+### example showing scale above and below
+HOZscale(j, terrain.colors(100),
+          units="hi", SIDE=3, s1=.4, s2=0.6, format=2, digits=2, cex.units = 1.2, cex=1.2)
+
+j = c(runif(1, -10, 10)/1000 , runif(1, 1, 10) )
+
+HOZscale(j, terrain.colors(100),
+          units="hi", SIDE=1, s1=.6, s2=0.8, format=2, digits=2, cex.units = 0.8)
 
 
 }

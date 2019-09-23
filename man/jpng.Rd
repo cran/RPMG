@@ -47,7 +47,8 @@ jpdf(file='tmp',  width = 8, height = 8,P = NULL)
 
 \examples{
 
-jjj = local.file('hi', 'eps')
+\dontrun{
+jjj = local.file('hi', 'png')
 x= rnorm(10)
 y= rnorm(10)
 
@@ -55,19 +56,20 @@ plot(x,y)
 
 print('resize the current plot')
 
-jpostscript(jjj)
+jpng(jjj, width = 8, height = 8)
 plot(x,y)
 dev.off()
 
-jpostscript("HiThere", P=c(7,7) )
+jpdf("HiThere.pdf", width = 8, height = 8 )
 plot(x,y)
 dev.off()
 
 
-jpostscript("HiThere", P=c(7,7), w=10 )
+jpng("HiThere.png", width = 8, height = 8 , bg='red' )
 plot(x,y)
 dev.off()
 
+}
 
 
 

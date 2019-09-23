@@ -42,6 +42,7 @@ jpostscript(file=NULL, P=NULL, w=NULL, h=NULL)
 
 \examples{
 
+\dontrun{
 jjj = local.file('hi', 'eps')
 x= rnorm(10)
 y= rnorm(10)
@@ -63,7 +64,7 @@ jpostscript("HiThere", P=c(7,7), w=10 )
 plot(x,y)
 dev.off()
 
-
+}
 
 
 }

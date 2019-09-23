@@ -20,4 +20,23 @@ pickcolors(COLLIST = colors(), BACK = "white")
 
 \seealso{syscolors}
 
+\examples{
+\dontrun{
+######## see named colors, excluding grey
+SYSCOL =  colors()
+greys = grep('grey', SYSCOL)
+grays = grep('gray', SYSCOL)
+
+kolz = SYSCOL[-c(greys, grays) ]
+pickcolors(COLLIST = kolz, BACK = "white")
+
+###  or just one type
+SYSCOL =  colors()
+blues = SYSCOL[grep('blue', SYSCOL) ]
+pickcolors(COLLIST = blues, BACK = "white")
+}
+}
+
+
+
 \keyword{misc}
