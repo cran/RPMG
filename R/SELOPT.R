@@ -236,9 +236,10 @@ SELOPT<-function(OPTS, onoff=-1, ncol=5, ocols ="white", cex=1, default="opt"  )
             ## print(gvars$worder)
            ##  print(gvars$opts[gvars$worder])
             
-           ##  retvec = gvars$opts[gvars$onoff==1]
+              ##  retvec = gvars$opts[gvars$onoff==1]
+             
             retvec = gvars$opts[gvars$worder]
-                
+                attr(retvec, 'index')<-gvars$worder
             ## print(OKAY)
             return(retvec)
 

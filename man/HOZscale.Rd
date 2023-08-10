@@ -25,7 +25,8 @@ HOZscale(z, col, units="", SIDE=1, s1=.6, s2=0.95,
 }
 
 \value{
- Graphical Side effect
+  Vector of rectangle coordinates and z-values: 
+  c(xmin,ymin, xmax, ymax, Z-min, Z-max)
 }
 
 \author{Jonathan M. Lees<jonathan.lees.edu>}

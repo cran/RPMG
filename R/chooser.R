@@ -128,8 +128,14 @@
 
       }
 
-    z = locator(n=nsel, type='p', ...)
-
+    if(base::interactive())
+        {
+            z = locator(n=nsel, type='p', ...)
+        } else
+            {
+                z = list(x=min(xlim), y = min(ylim) )
+            }
+    
     if(length(z$x)<1)
       {
         

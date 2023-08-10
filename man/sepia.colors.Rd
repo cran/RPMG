@@ -1,7 +1,7 @@
 \name{sepia.colors}
 \Rdversion{1.1}
 \alias{sepia.colors}
-\alias{hcl.colors}
+\alias{myhcl.colors}
 
 \title{Sepia Color Palette
 }
@@ -9,7 +9,7 @@
 }
 \usage{
 sepia.colors(n, k = 1)
-hcl.colors(n, k = 260)
+myhcl.colors(n, k = 260)
 }
 \arguments{
   \item{n}{Number of colors

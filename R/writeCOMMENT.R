@@ -3,7 +3,7 @@ writeCOMMENT<-function(temp, space=" ", letspace="", MSUB="0", prefix="", suffix
     if(missing(space)) space=" "
     if(missing(letspace)) letspace=""
     if(missing(MSUB))  MSUB=NA
-    if(missing(prefix))  prefix="" 
+    if(missing(prefix))  prefix="#### " 
     if(missing(suffix))  suffix="" 
 
 ########  line comment in R

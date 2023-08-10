@@ -1,4 +1,4 @@
-`hcl.colors` <-
+`myhcl.colors` <-
 function(n, k=260)
   {
     if(missing(k)) k = 260

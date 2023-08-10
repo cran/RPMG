@@ -100,5 +100,10 @@
             text(LU$x[1]-BX/2,  (y1+y2)/2, labels=format.default(rng[1], digits=3), adj=1, xpd = TRUE, cex=cex)
         }
     rect(LU$x[1], LU$y[1], LU$x[2], LU$y[2], xpd=TRUE)
+
+
+##########  send back the outline of the scale box
+    
+    invisible(c(LU$x[1], LU$y[1], LU$x[2], LU$y[2], rng[1], rng[2]) )
     
   }
