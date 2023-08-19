@@ -7,20 +7,10 @@ Really Poor Man's GUI: sets up buttons for a graphical user interface in
 R
 }
 \description{
-  Package consists of two functions for setting up a\
-  GUI using only R-code.
-  
-}
-\details{
-\tabular{ll}{
-Package: \tab RPMG\cr
-Type: \tab Package\cr
-Version: \tab 2.1-2\cr
-Date: \tab 2008-08-15\cr
-License: \tab GPL\cr
+  Really Poor Man's Graphical User Interface, used to create interactive
+  R analysis sessions with simple R commands.  
 }
 
-}
 \author{Jonathan M. Lees <jonathan.lees@unc.edu>}
 \keyword{ package }
 \seealso{rowBUTTONS, whichbutt}
